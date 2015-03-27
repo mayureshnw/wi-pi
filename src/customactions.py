@@ -4,6 +4,7 @@ pretext={"name":["Whats your name","What is your name","What your name"],
 "wearing":["what are you wearing"],
 "creater":["who is your creator"],
 "goodnight":["goodnight"],
+"google":["Do you know google now","what do you think about google now"]
 }
      
 import sys
@@ -15,30 +16,35 @@ if "name" in text:
    	for i in range(len(x)):
     		if text==x[i]:
      			print "Hello,I am WiPi"
-else if "marry" in text:
+elif "marry" in text:
 	x=pretext["marry"]
    	for i in range(len(x)):
     		if text==x[i]:
      			print "OK, we'll need a plan. I'll work on being more human, you work on being more digital."
-else if "male" in text:
+elif "male" in text:
 	x=pretext["gender"]
    	for i in range(len(x)):
     		if text==x[i]:
      			print "Female? Maybe. Woman? No."
-else if "wearing" in text:
+elif "wearing" in text:
 	x=pretext["wearing"]
    	for i in range(len(x)):
     		if text==x[i]:
      			print "Huh? Can't tell you."
-else if "creator" in text:
+elif "creator" in text:
 	x=pretext["creator"]
    	for i in range(len(x)):
     		if text==x[i]:
      			print "Come on, chief, I can't give away all of all secrets.."
-else if "goodnight" in text:
+elif "goodnight" in text:
 	x=pretext["goodnight"]
    	for i in range(len(x)):
     		if text==x[i]:
      			print "Goodnight, see you in the morning."
+elif "google" in text:
+	x=pretext["google"]
+   	for i in range(len(x)):
+    		if text==x[i]:
+     			print "It doesn't have much to say, but it's helpful."
 
 
